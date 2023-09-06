@@ -1,0 +1,115 @@
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Home */
+#home-externo{
+    flex: 1;
+    background-color: #306faf;
+    padding: 1rem;
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#home-interno{
+    width: fit-content;
+    margin: 3rem;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-interno h1{
+    margin-bottom: 1rem;
+}
+
+/* Página da escrita da carta */
+#carta-externo{
+    flex: 1;
+    background-color: #306faf;
+    padding: 1rem;
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#carta-container{
+    background-color: #306faf;
+    width: fit-content;
+    margin: 3rem;
+    border-radius: 20px;
+    padding: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carta-container h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#carta-container p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#campos-carta{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+#mensagem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#mensagem textarea{
+    text-align: start;
+}
+
+#carta-container input, textarea {
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+    font-size: .9rem;
+  }
+
+#carta-container input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#carta-container input[type="submit"]:hover {
+    background-color: #fff;
+    color: #306faf;
+  }

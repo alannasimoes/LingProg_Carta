@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Home</title>
+		<!-- Estilizando a página -->
+		<link rel="stylesheet" href="../static/style.css">
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<form method = "POST" action="/login">
+			<div id="home-externo">
+				<div id="home-interno">
+					<h1>Faça seu login para escrever a carta</h1>
+					<div id="login">
+						<div id="dados-login">
+							<p>Nome: <input type="text" id="nome" name="nome"></p>
+							<p>Senha: <input type="password" id="senha" name="senha"></p>
+						</div>
+						<input type="submit" value="login">
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

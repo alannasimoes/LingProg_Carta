@@ -1,10 +1,5 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, request
 import funcionalidades
-import os
-
-cwd = os.getcwd()  # Get the current working directory (cwd)
-files = os.listdir(cwd)  # Get all the files in that directory
-print("Files in %r: %s" % (cwd, files))
 
 app = Flask(__name__)
 
@@ -42,7 +37,7 @@ def carta():
           carta_formatada = data + '\n' + destinatario + '\n' + mensagem + '\n' + remetente
           nome_arq = funcionalidades.salvar_txt(data, destinatario, remetente, carta_formatada)
           funcionalidades.salvar_pdf(nome_arq)
-          return render_template("principal.html")
+          return f'<p>{data}</p><p>{destinatario}</p><p>{mensagem}</p><p>{remetente}</p>'
         else: 
           return render_template("principal.html")
 
